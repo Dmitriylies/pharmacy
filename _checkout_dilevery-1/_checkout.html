@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Оформление заказа</title>
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="header__head">
+               <div class="header__head-wrap">
+               <div class="header__logo" >
+                  <a class="header__logo-link" href="../index.html" tabindex="0" >
+                     <img src="../img/logo.png" alt="logo" >
+                  </a>   
+               </div>
+               <form class="header__form form" action="">
+                  <input class="header__form-input form__input" type="text" placeholder="Введите название препарата">
+                  <button class="header__form-button form__button">Найти</button> 
+               </form>
+            </div>
+               <a class="header__phone" href="tel:+38073153220" tabindex="1">+ 380 73 15 32 20</a>
+            </div>
+            <a class="header__bascet bascet" href="" tabindex="2">
+               Корзина
+               <span class="bascet__indicator">0</span>
+            </a>
+         </div>
+         <button class="header__btn-back">
+            <span>Назад</span> 
+         </button>
+      </div>
+   </header>
+   <!-- <section>---------------------------- -->
+      <section class="checkout">
+         <div class="container">
+            <div class="checkout__inner">
+               <div class="checkout__head">
+                  <h2 class="checkout__title">Оформление заказа</h2>
+      <!--ITEMS-->            
+               <div class="checkout__items">
+                  
+                  <div class="bascet-modal__item"> 
+                     
+                        <div class="bascet-modal__img">    
+                           <img src="../img/general/item__1.jpg" alt="внеший вид">
+                        </div>
+                  <div class="bascet-modal__bigest-inner">    
+                     <div class="bascet-modal__big-inner">
+                           <div class="bascet-modal__name-wrap">
+                              <a class="item-link" href=""><p class="bascet-modal__name"> Олидетрим капс. 1000 МЕ №30</p></a>
+                              <p class="bascet-modal__desc">Medana Pharma S. A. (Польша)</p>
+                           </div>
+                        <div class="bascet-modal__small-inner" data-da="bascet-modal__bigest-inner, last, 991 ">
+                           <div class="bascet-modal__count">
+                              <div class="bascet-modal__count1">
+                               <img src="../img/general/_icons/modal_icon-1.svg" alt="">
+                              </div>
+                              <p class="bascet-modal__value">1</p>
+                              <div class="bascet-modal__count2">
+                                 <img src="../img/general/_icons/modal_icon-2.svg" alt="">
+                              </div>
+                           </div>
+                           <div class="bascet-modal__item-price">
+                              <span class="item-value">7888</span> грн
+                           </div>
+                        </div>   
+                           <div class="bascet-modal__item-del">
+                              <img src="../img/general/_icons/modal_icon-bascet.svg" alt="">
+                           </div>
+                     </div> 
+                  </div>     
+                  </div>
+               </div>  
+      <!--/ITEMS-->                
+                  <h3 class="checkout__subtitle delivery-kind__subtitle">Способ получения</h3>
+                  <ul class="checkout__delivery-type">
+                     <li class="checkout__type checkout__type--active">Доставка по адресу</li>
+                     <li class="checkout__type">Заберу сам</li>
+                     <li class="checkout__type">Новой почтой</li>
+                     <li class="checkout__type">Доставка в больницу</li>
+                  </ul>
+               </div><!-- head -->
+      <!--KIND OF DELIVERY-->
+      <!-- kind-1 (доставка по адресу) -->
+            <div class="delivery-kind-1">
+               <form class="delivery-kind-1__form-1" action="">
+                  <input class="delivery-kind-1__1-input delivery-kind__input" type="text" placeholder="Введите улицу куда доставлять">
+                  <input class="delivery-kind-1__1-input delivery-kind__input" type="text" placeholder="Номер дома">
+                  <input class="delivery-kind-1__1-input delivery-kind__input" type="text" placeholder="Квартира">
+               </form> 
+              <h3 class="delivery-kind-1__subtitle-1 delivery-kind__subtitle">Время доставки</h3>
+               <ul class="delivery-kind-1__delivery-type delivery-kind__list">
+                  <li class="delivery-kind-1__type type delivery-kind__item delivery-kind__item--active">Сегодня</li>
+                  <li class="delivery-kind-1__type type delivery-kind__item">Завтра</li>
+               </ul>
+               <div class="delivery-kind__avalible-time delivery-kind__avalible-time--active">
+                  <div class="delivery-kind__time-card delivery-kind__time-card--active">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+                  <div class="delivery-kind__time-card">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+                  <div class="delivery-kind__time-card">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+               </div>
+
+               <form class="delivery-kind-1__form-2" action="">
+                 <h3 class="delivery-kind-1__subtitle-2 delivery-kind__subtitle">Ваши данные</h3>
+                  <input class="delivery-kind-1__2-input delivery-kind__input" type="text" placeholder="Имя и фамилия">
+                  <input class="delivery-kind-1__2-input delivery-kind__input" type="text" placeholder="Телефон">
+                  <textarea class="delivery-kind-1__textarea delivery-kind__textarea" type="textarea" placeholder="Комментарий к заказу"></textarea>                       
+               </form> 
+            </div>
+      <!-- /kind-1 (доставка по адресу) -->
+      <!-- kind-2 (заберу сам) -->
+            <div class="delivery-kind-2">
+               <h3 class="delivery-kind-2__title">Найдено <span>3</span> аптек, где есть все товары</h3>
+               <form class="delivery-kind-2__radius">
+                  <p class="delivery-kind-2__radius-text">Радиус поиска</p>
+               <div class="delivery-kind-2__range-wrap">
+                  <input class="delivery-kind-2__range" id="range" type="range" min="2" max="10" step="2" oninput="fun1()">
+                  <p class="delivery-kind-2__range-text" id="range-text"></p>
+               </div>
+               <div class="delivery-kind-2__radio-wrap">
+                  <p class="delivery-kind-2__radio-text"></p><input class="delivery-kind-2__radio" type="radio"> Ближе ко мне
+                  <p class="delivery-kind-2__radio-text"></p><input class="delivery-kind-2__radio" type="radio"> Дешевле
+               </div>
+               </form>
+               <div class="delivery-kind-2__cards delivery-kind__cards">
+               <div class="delivery-kind-2__card delivery-kind__card delivery-kind__card--active">
+                  <div class="delivery-kind-2__price">
+                     <p class="delivery-kind-2__card-text delivery-kind__card-name" >Аптека Эл'Фарм</p> 
+                     <p class="delivery-kind-2__price-text delivery-kind-2__card-text--blue" >350.00 грн</p>
+                  </div>
+                  <div class="delivery-kind-2__adress">
+                     <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                     <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >2.2</p>
+                  </div>
+                  <div class="delivery-kind-2__time">
+                     <p class="delivery-kind-2__card-text--blue" >Пн - Нд: 09:00 - 22:00</p>
+                     <button class="delivery-kind-2__btn delivery-kind__card-btn">Выбор </button>
+                  </div>
+               </div>
+                  <div class="delivery-kind-2__card delivery-kind__card">
+                     <div class="delivery-kind-2__price">
+                        <p class="delivery-kind-2__card-text delivery-kind__card-name" >Аптека Эл'Фарм</p> 
+                        <p class="delivery-kind-2__price-text delivery-kind-2__card-text--blue" >350.00 грн</p>
+                     </div>
+                     <div class="delivery-kind-2__adress">
+                        <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                        <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >2.2</p>
+                     </div>
+                     <div class="delivery-kind-2__time">
+                        <p class="delivery-kind-2__card-text--blue" >Пн - Нд: 09:00 - 22:00</p>
+                        <button class="delivery-kind-2__btn delivery-kind__card-btn">Выбор </button>
+                     </div>
+                  </div>
+                  <div class="delivery-kind-2__card delivery-kind__card">
+                     <div class="delivery-kind-2__price">
+                        <p class="delivery-kind-2__card-text delivery-kind__card-name" >Аптека Эл'Фарм</p> 
+                        <p class="delivery-kind-2__price-text delivery-kind-2__card-text--blue" >350.00 грн</p>
+                     </div>
+                     <div class="delivery-kind-2__adress">
+                        <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                        <p class="delivery-kind-2__adress-text delivery-kind__card-adress" >2.2</p>
+                     </div>
+                     <div class="delivery-kind-2__time ">
+                        <p class="delivery-kind-2__card-text--blue" >Пн - Нд: 09:00 - 22:00</p>
+                        <button class="delivery-kind-2__btn delivery-kind__card-btn">Выбор </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="delivery-kind-2__map" id="map"></div>
+            </div>
+      <!-- /kind-2 (заберу сам) -->
+  <!-- /kind-3 (новой почтой) -->  
+            <div class="delivery-kind-3">
+               <h3 class="delivery-kind-3__subtitle delivery-kind__subtitle">Ваши данные</h3>
+               <form action="" class="delivery-kind-3__form">
+                  <p><input class="delivery-kind-3__input delivery-kind__input" type="text" placeholder="Отделение новой почты"></p>
+                  <p><input class="delivery-kind-3__input delivery-kind__input" type="text" placeholder="Имя и фамилия"></p>
+                  <p><input class="delivery-kind-3__input delivery-kind__input" type="text" pattern="\+7,+3\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Телефон"></p>
+                  <textarea class="delivery-kind-3__textarea delivery-kind__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+               </form>
+            </div>
+  <!-- /kind-3 (новой почтой) -->
+
+<!-- kind-4 (доставка в больницу) -->
+            <div class="delivery-kind-4">
+               <div class="delivery-kind-4__cards delivery-kind__cards">
+                  <div class="delivery-kind-4__card delivery-kind__card delivery-kind__card--active">
+                        <p class="delivery-kind-4__card-name delivery-kind__card-name" >Больница Эл'Фарм</p> 
+                        <p class="delivery-kind-4__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                        <button class="delivery-kind-4__btn delivery-kind__card-btn">Выбор </button>
+                  </div> 
+                  <div class="delivery-kind-4__card delivery-kind__card">
+                     <p class="delivery-kind-4__card-name delivery-kind__card-name" >Больница Эл'Фарм</p> 
+                     <p class="delivery-kind-4__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                     <button class="delivery-kind-4__btn delivery-kind__card-btn">Выбор </button>
+                  </div>
+                  <div class="delivery-kind-4__card delivery-kind__card">
+                     <p class="delivery-kind-4__card-name delivery-kind__card-name" >Больница Эл'Фарм</p> 
+                     <p class="delivery-kind-4__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                     <button class="delivery-kind-4__btn delivery-kind__card-btn">Выбор </button>
+                  </div>
+                  <div class="delivery-kind-4__card delivery-kind__card">
+                     <p class="delivery-kind-4__card-name delivery-kind__card-name" >Больница Эл'Фарм</p> 
+                     <p class="delivery-kind-4__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                     <button class="delivery-kind-4__btn delivery-kind__card-btn">Выбор </button>
+                  </div>
+                  <div class="delivery-kind-4__card delivery-kind__card">
+                     <p class="delivery-kind-4__card-name delivery-kind__card-name" >Больница Эл'Фарм</p> 
+                     <p class="delivery-kind-4__adress-text delivery-kind__card-adress" >Киев, ул. Михаила Омельяновича-Павленко 7</p> 
+                     <button class="delivery-kind-4__btn delivery-kind__card-btn">Выбор </button>
+                  </div>
+               </div>
+               <h3 class="delivery-kind-4__subtitle-1 delivery-kind__subtitle">Время доставки</h3>
+               <ul class="delivery-kind-4__delivery-type delivery-kind__list">
+                  <li class="delivery-kind-4__type delivery-kind__item delivery-kind__item--active">Сегодня</li>
+                  <li class="delivery-kind-4__type delivery-kind__item">Завтра</li>
+               </ul>
+               <div class="delivery-kind__avalible-time delivery-kind__avalible-time--active">
+                  <div class="delivery-kind__time-card delivery-kind__time-card--active">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+                  <div class="delivery-kind__time-card">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+                  <div class="delivery-kind__time-card">
+                     <p class="delivery-kind__time">
+                        11:30 - 15:00 
+                     </p>
+                     <p class="delivery-kind__price">
+                        79.00 грн
+                     </p> 
+                     <p class="delivery-kind__when">
+                        Доставка с 11:30 до 15 часов
+                     </p>      
+                  </div>
+               </div>
+            </div>   
+<!-- /kind-4 (доставка в больницу) -->
+
+      <!--/KIND OF DELIVERY-->
+               <div class="checkout__foot">
+                  <h3 class="checkout__subtitle delivery-kind__subtitle">Итог по заказу</h3>
+                  <ul class="checkout__list">
+                     <li class="checkout__list-item">Стоимость товаров: <span class="checkout__list-value"> 350.00 грн</span> </li>
+                     <li class="checkout__list-item">Цена за доставку: <span class="checkout__list-value"> 79.00 грн</span> </li>
+                     <li class="checkout__list-item">Доставка завтра <span class="checkout__list-value"> 19:00 - 23:00</span> </li>
+                     <li class="checkout__list-item">Итого: <span class="checkout__list-value"> 429.00 грн</span> </li>
+                  </ul>
+                  <form action="" class="checkout__form">                        
+                        <p class="checkout__input"> 
+                           <input class="checkout__input-radio" type="radio">  
+                           Ознакомился и принимаю условия  
+                           <a class="checkout__input-link" href="">Публичной оферты,</a>
+                           <a class="checkout__input-link" href="">Регламента и Политики конфиденциальности</a>
+                        </p>
+                        <button class="checkout__btn">Оформить заказ</button>
+                  </form>
+               </div>
+            </div><!-- inner -->
+         </div>
+      </section>
+   <!-- </section>------------------------------>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__main">
+               <div class="footer__logo">
+                  <a href="../index.html" class="footer__logo-link">
+                     <img src="../img/logo.png" alt="logo">
+                  </a>   
+               </div>
+               <div class="footer__info">
+                  <div class="footer__info-wrap">
+                     <a class="footer__text" href="../_privacy/_privacy.html">Политика конфиденциальности</a>
+                     <a class="footer__text" href="../_delivery/_delivery.html">Правила доставки препаратов</a>
+                  </div>
+                  <div class="footer__info-wrap">
+                     <a class="footer__text" href="../_catalog/_catalog.html">Каталог препаратов</a>
+                     <a class="footer__text" href="../_contacts/_contacts.html">Контакты</a>
+                  </div>
+               </div>
+               <img class="footer__img" src="../img/3__color-plant.png" alt="">
+               <a class="footer__phone" href="tel:+38073153220">+ 380 73 15 32 20</a>
+            </div>
+         </div>
+      </div>
+            <div class="footer__remark">
+               <div class="container">
+                  <img class="footer__remark-img" src="../img/3__footer-text.png" alt="Самолiкування може бути шкiдливим для вашого здоров'я">
+               </div>
+            </div>
+   </footer>
+   <script src="js/script.js"></script>
+   <script src="../js/dunamicAdapt.js"></script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4IcildS_xmZvGrrWjNyuGoCgA7PIOGQc&callback=initMap">
+   </script>
+</body>
+</html>

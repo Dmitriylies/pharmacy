@@ -1,0 +1,305 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+	$fontfamily : 'Avenir Next Cyr';
+//</ШРИФТЫ>===============================================================
+
+
+//<ПЕРЕМЕННЫЕ>=========================
+
+	//<РАЗРЕШЕНИЕ>-----
+		$minwidth: 320px;
+		$mm: 1920;
+		$mw: 1240;
+		$md1: $mw + 12;
+		$md2: 990.98;
+		$md3: 767.98;
+		$md4: 479.98;
+	//</РАЗРЕШЕНИЕ>-----
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+	body {
+		color: #000;
+		font-size: 14px;
+		font-family: $Avenir;
+		position: relative;
+	}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================
+
+
+//<ОСНОВНАЯ СЕТКА>=============================================================
+.container {
+	max-width:  $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	
+	padding: 0px 20px;
+	@media (min-width: $mm+px) {
+		max-width: 1780px;
+		padding: 0 20px;
+	}
+	 @media (max-width: $md1+px) {
+	 	max-width: 1070px;
+	 }
+	 @media (max-width: $md2+px) {
+	 	max-width: 750px;
+	 }
+	 @media (max-width: $md3+px) {
+	 	max-width: none;
+	 	padding: 0 10px;
+	 }
+}
+//</ОСНОВНАЯ СЕТКА>==================================================================
+
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+	@import "../../scss_pages/_header.scss";
+	@import "../../scss_pages/_footer.scss";
+	@import "../../scss_pages/card-1";   
+	
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+
+
+//<ОБЩИЕ КЛАССЫ>===============================================================
+//</ОБЩИЕ КЛАССЫ>==============================================================
+
+
+//=============================================================================
+.catalog {
+	&__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 90px;
+	}
+	&__form {
+		display: none;
+      box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 100px;
+      border: 1px solid $ocean;
+      background-color: #fff;
+      position: relative;
+      margin: 0 auto 30px;
+		width: 350px;
+		max-width: 100%;
+		height: 44px;
+   }
+   // .header__form-input
+   &__form-input {
+      display: flex;
+      align-items: center;
+      padding: 15px 0px 15px 25px;
+      position: relative;
+      font-family: $Avenir;	
+      width: 100%;		
+      font-size: 18px;
+		line-height: 22px;
+		border-radius: 100px;
+      padding: 15px 0px 15px 20px;
+      &::placeholder {
+         font-family: $Avenir;
+         color: #595959;
+         opacity: 0.5;
+         font-size: 18px;
+         line-height: 22px;
+      }
+   }
+   // .header__form-button
+   &__form-button {
+		min-width: 49px;
+		border-radius: 0px 100px 100px 0px;
+		font-size: 0px;
+		position: relative;
+		background-color: #2196F3;
+		&::before {
+			content: url(../../img/3__loupe-fff.svg);
+			position: absolute; 
+			top: 12px;
+			right: 15px;
+			z-index: 5;
+		}
+   }
+	// .catalog__direction
+	&__direction {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	// .catalog__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	// .catalog__item
+	&__item {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	// .catalog__item-link
+	&__item-link {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	// .catalog__head
+	&__head {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		margin-bottom: 28px;
+	}
+	// .catalog__title
+	&__title {
+		font-family: $Gilroy;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: #2196F3;
+		margin-bottom: 20px;
+	}
+	// .catalog__sort
+	&__sort {
+		font-family: $Avenir;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 17px;
+		color: rgba(0, 0, 0, 0.5);
+		margin-bottom: 20px;
+	}
+	// .catalog__sort-item
+	&__sort-item {
+		box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.08);
+		border-radius: 15px;
+		margin-left: 5px;
+		height: 35px;
+		padding: 0px 0px 0px 15px;
+	}
+	&__button-filter-wrap {
+		display: none;
+		width: 100%;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	&__button-filter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-right: 30px;
+		width: 220px;
+		height: 40px;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 17px;
+		background-color: #fff;
+		color: rgba(0, 0, 0, 0.5);
+		box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.08);
+		border-radius: 15px;
+		position: relative;
+		&:after {
+			content: url(../../img/general/_icons/icon-mob_filter.svg);
+			position: absolute;
+			top: 14px;
+			right: 57px;
+		}
+	}
+	// .catalog__main
+	&__main {        
+		display: flex;
+		align-items: start;
+	}
+	// .catalog__menu
+	&__menu {
+		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.08);
+		border-radius: 15px;
+		padding: 21px 0px 0px;
+		box-sizing: border-box;
+	}
+	&__menu-wrap {
+		width: 278px;
+		margin-bottom: 46px;
+		padding-left: 35px;
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
+	// .catalog__menu-title
+	&__menu-title {
+		font-family: $Gilroy;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: $ocean;
+		margin-bottom: 52px;
+		
+	}
+	&__menu-list {
+		width: 189px;
+	}
+	// .catalog__menu-item
+	&__menu-item {
+		margin-bottom: 25px;
+	}
+	// .catalog__menu-link
+	&__menu-link {
+		font-family: $Avenir;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(0, 0, 0, 0.85);
+	}
+	// .catalog__product
+	&__product {
+	}
+	// .catalog__product-inner
+	&__product-inner {
+	}
+	// .catalog__product-items
+	&__product-items {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__pages-list {
+		display: flex;
+	}
+	&__products-pages {
+		display: flex;
+		justify-content: center;
+	}
+	&__pages-item {
+		text-align: center;
+		padding-top: 6px;
+		width: 30px;
+		height: 30px;
+		border: 1px solid $ocean;
+		border-radius: 10px;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	&__pages-link{
+		
+		font-size: 14px;
+		line-height: 17px;
+		color: $ocean;	
+	}
+}
+//<ОСНОВНОЙ БЛОК>==============================================================
+//</ОСНОВНОЙ БЛОК>=============================================================
+//<MEDIA>===============
+@import "../../scss_pages/_media__ftr.hdr.scss";
+@import "_catalog_media.scss";
+
+//</MEDIA>===============

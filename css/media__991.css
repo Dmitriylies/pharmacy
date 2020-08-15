@@ -1,0 +1,11 @@
+@media (max-width: 991.98px) {
+  .top__form {
+    width: 700px;
+  }
+  .top__instruction {
+    margin-bottom: 190px;
+  }
+  .item {
+    margin: 0px 25px 30px 25px;
+  }
+}

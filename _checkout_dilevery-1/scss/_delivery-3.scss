@@ -1,0 +1,86 @@
+
+//<новой почтой>------------------------------
+.delivery-kind-3 {
+	display: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__subtitle {
+		margin-bottom: 22px;
+	}
+	&__form {
+      min-width: 270px;
+		margin-bottom: 100px;
+	}
+	&__input {
+		margin-bottom: 20px;
+	}
+	&__textarea {
+		height: 160px;
+		border-radius: 15px;
+		padding-top: 12px;
+	}
+}
+//</новой почтой>------------------------------
+//<MEDIA delivery-3>=====================================================
+@media  (min-width: 1919.98px) {//------------------------------------------------------1919.98
+	.delivery-kind-3 {
+		&__form {
+			max-width: 380px;
+			margin-bottom: 115px;
+		}
+		&__subtitle {//повторяеться
+			margin-bottom: 32px;
+		}
+		&__input {//повторяеться
+			margin-bottom: 15px;
+		}
+	}
+}   
+
+@media (max-width: 1251.98px) {//------------------------------------------------------1251.98
+}
+
+@media (max-width: 1023.98px) {//------------------------------------------------------1023.98
+}  
+
+@media (max-width: 990.98px) {//-------------------------------------------------------990.98
+   .delivery-kind-3 {
+		
+		&__form {
+         max-width: 450px;
+		}
+		&__textarea {
+			width: 450px;
+		} 
+		
+	   // .delivery-kind-1__input
+	   &__input {
+	   	width: 100%;
+	   	max-width: 100%;
+	   	height: 42px;
+      }
+   } 
+}
+@media (max-width: 767.98px) {//------------------------------------------------------767.98
+ 
+}
+
+@media (max-width: 639.98px) {//------------------------------------------------------639.98
+   .delivery-kind-3 {
+      &__form {
+         max-width: 270px;
+         margin-bottom: 50px;
+     
+      }
+      &__textarea {
+         width: 100%;
+         max-width: 100%;
+         height: 160px;
+      }
+   }
+}
+
+@media (max-width: 419.98px) {//------------------------------------------------------419.98
+}
+//<MEDIA delivery-1>==============================================

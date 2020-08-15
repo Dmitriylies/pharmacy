@@ -1,0 +1,443 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+//</ШРИФТЫ>===============================================================
+
+//<ПЕРЕМЕННЫЕ>=========================
+	//<РАЗРЕШЕНИЕ>-----
+		$minwidth: 320px;
+		$mm: 1920;
+		$mw: 1240;
+		$md1: $mw + 12;
+		$md2: 990.98;
+		$md3: 767.98;
+		$md4: 479.98;
+		$md5: 319.98;
+	//</РАЗРЕШЕНИЕ>-----
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+	body {
+		color: #000;
+		font-size: 14px;
+		background:url(../../img/general/bg-plant.svg) left 170px no-repeat,url(../../img/contacts__bg.svg) right 170px no-repeat;
+		background-attachment: fixed;
+		font-family: $Avenir;
+	}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=================================================
+//<CONTAINER>===================================================================
+	.container {
+		max-width:  $mw + px;
+		margin: 0 auto;
+		width: 100%;
+		padding: 0px 20px;
+		@media (min-width: $mm+px) {
+			max-width: 1780px;
+			padding: 0 20px;
+		}
+		 @media (max-width: $md1+px) {
+		 	max-width: 1070px;
+		 }
+		 @media (max-width: $md2+px) {
+		 	max-width: 750px;
+		 }
+		 @media (max-width: $md3+px) {
+		 	max-width: none;
+		 	padding: 0 20px;
+		 }
+		 @media (max-width: $md5+px) {
+			max-width: none;
+			padding: 0 5px;
+		}
+	}
+//</CONTAINER>==================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+	@import "../../scss_pages/_header.scss";
+	@import "../../scss_pages/_footer.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+
+	//<ОБЩИЕ КЛАССЫ>===============================================================
+	.checkout {
+		// .checkout__head
+		&__head {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+		// .checkout__title	
+		&__title {
+			text-align: center;
+			font-family: $Gilroy;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			color: $ocean;
+			margin-bottom: 32px;
+		}
+		&__items {
+			width: 100%;
+			margin-bottom: 35px;
+		}
+		// .checkout__subtitle
+		&__subtitle {
+			margin-bottom: 40px;
+		}
+		// .checkout__delivery-type
+		&__delivery-type {
+			width: 100%;
+			max-width: 900px;
+			display: flex;
+			justify-content: center;
+			font-weight: 750;
+			font-size: 14px;
+			line-height: 17px;
+			color: $ocean;	
+			border: 1px solid $ocean;
+			border-radius: 100px; 
+			margin-bottom: 30px;
+		}
+		// .checkout__type
+		&__type {
+			width: 25%;
+			padding: 12px 0;
+			border-radius: 100px;
+			text-align: center;
+			cursor: pointer;
+		}
+		// .checkout__type--active
+		&__type--active {
+			color: #fff;	
+			background: linear-gradient(150.59deg, #2196F3 26.24%, #5C76FF 102.67%);
+		}
+		// .checkout__foot
+		&__foot {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 84px;
+		}
+		// .checkout__list-item
+		&__list-item {
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 25px; 
+		}
+		&__list-value {
+			color: $ocean;
+		}
+		// .checkout__form
+		&__form {
+			max-width: 450px;
+			display: flex;
+			flex-direction: column;
+			font-size: 14px;
+			line-height: 17px;
+			align-items: center;
+
+		}
+		// .checkout__input
+		&__input {
+			text-align: center;
+			margin-bottom: 20px;
+			
+		}
+		&__input-radio{
+			cursor: pointer;
+		}
+		&__input-link {
+			color: $ocean;
+		}
+		// .checkout__btn
+		&__btn {
+			width: 225px;
+			height: 42px;
+			background: linear-gradient(150.59deg, #2196F3 26.24%, #5C76FF 102.67%);
+			box-shadow: 4px 4px 15px rgba(33, 150, 243, 0.1);
+			border-radius: 100px;
+			color: #fff;
+			font-weight: 750;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+	//<КЛАССЫ ITEM'a>=======================================================================//
+	// .bascet-modal__item
+	.bascet-modal {
+		&__item {
+			width: 100%;
+			max-width: 100%;
+			padding: 0px 105px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 10px;
+			position: relative;
+			background-color: #fff;
+			box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.07);
+			border-radius: 15px;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		// .bascet-modal__img
+		&__img {
+			width: 120px;
+			height: 120px;
+			margin-right: 85px;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&__bigest-inner {
+			display: flex;
+			flex: 1 1 auto;
+		}
+		&__big-inner {
+			display: flex;
+			flex: 1 1 auto;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__small-inner {
+			display: flex;
+			justify-content: center;
+			flex: 1 1 auto;
+			align-items: center;
+		}
+		// .bascet-modal__name
+		&__name-wrap {
+			max-width: 300px;
+			position: relative;
+		}
+		// .bascet-modal__name
+		&__name {
+			font-weight: 500;
+			font-size: 18px;
+			 line-height: 30px;
+			color: #444444;
+		}
+		// .bascet-modal__desc
+		&__desc {
+			font-size: 14px;
+			line-height: 20px;
+			color: #6b6767;
+		}
+		// .bascet-modal__count
+		&__count {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 64px;
+			margin-right: 60px;
+		}
+		// .bascet-modal__value
+		&__value {
+			font-family: $Gilroy;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 29px;
+			color: #444444;
+		}
+		// .bascet-modal__count+
+		&__count1,
+		&__count2 {
+			margin-left: 5px;
+			cursor: pointer;
+		}
+		&__item-price {
+			font-size: 24px;
+			line-height: 29px;
+			color: $ocean;
+
+		}
+		&__item-del {
+			width: 12px;
+			height: 13.27px;
+			cursor: pointer;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	//</КЛАССЫ ITEM'a>======================================================================//
+
+
+	//<КЛАССЫ ВИДА ДОСТАВКИ>===========================================================================================//
+	//<ОБЩИЕ КЛАССЫ доставки>===============================================================
+	.delivery-kind {
+		&__subtitle {
+			font-family: $Gilroy;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+		}
+		&__textarea,
+		&__input {
+			width: 380px;
+			max-width: 100%;
+			height: 42px;
+			font-family: $Avenir;
+			font-size: 14px;
+			line-height: 17px;
+			border: 1px solid $ocean;
+			box-sizing: border-box;
+			border-radius: 100px;
+			background-color: #fff;
+			resize: none;
+			padding: 0px 20px 0px 20px;
+		}
+		//<карточки kind-2; kind-4>========================================================
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 0 -30px;
+		}
+		&__card {
+			width: 380px;
+			box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.05);
+			border-radius: 15px;
+			padding: 0px 35px;
+			background-color: #fff;
+			margin:0 15px 30px 15px;
+			cursor: pointer;
+		}
+		&__time-card--active,
+		&__card--active {
+			border: 0.5px solid $ocean;
+		}
+		&__card-name {
+			font-family: $Gilroy;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000;
+		}
+		&__card-adress {
+			font-family: $Gilroy;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			color: rgba(0, 0, 0, 0.75);
+		}
+		&__card-btn {
+			width: 130px;
+			height: 35px;
+			font-size: 14px;
+			line-height: 17px;
+			color: $ocean;
+			background-color: #fff;
+			border: 1px solid $ocean;
+			border-radius: 100px;
+		}
+		//</карточки kind-2; kind-4>=======================================================
+		&__list {
+			width: 100%;
+			max-width: 450px;
+			display: flex;
+			justify-content: center;
+			border: 1px solid $ocean;
+			border-radius: 100px; 
+			margin-bottom: 30px;
+		}
+		&__item {
+			width: 50%;
+			font-weight: 750;
+			font-size: 14px;
+			line-height: 17px;
+			color: $ocean;	
+			padding: 12px 0;
+			border-radius: 100px;
+			text-align: center;
+			cursor: pointer;
+		}
+		&__item--active {
+			color: #fff;	
+			background: linear-gradient(150.59deg, #2196F3 26.24%, #5C76FF 102.67%);
+		}
+		// .delivery-kind-1__avalible-time--active
+		&__avalible-time {
+			display: none;
+			flex-wrap: wrap;
+			margin: 0 -15px 30px -15px;
+		}
+		&__avalible-time--active {
+			display: flex;
+		}
+		&__time-card {
+			width: 175px;
+			max-width: 100%;
+			background-color: #fff;
+			box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.08);
+			border-radius: 15px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 15px 20px 15px;
+			cursor: pointer;
+		}
+		&__time {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 15px;
+			color: $ocean;
+			margin-top: 45px;
+			margin-bottom: 22px;
+		}
+		&__price {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 15px;
+			margin-bottom: 22px;
+		}
+		&__when {
+			text-align: center;
+			font-size: 13px;
+			line-height: 15px;
+			max-width: 110px;
+			margin-bottom: 38px;
+			color: rgba(58, 34, 24, 0.616);
+		} 
+	}
+	//<ОБЩИЕ КЛАССЫ доставки>===============================================================//
+
+		//доставка по адресу-----------------------------------------/
+		@import"_delivery-1.scss";
+		//доставка по адресу-----------------------------------------/
+
+		//<заберу сам>-----------------------------------------------/
+		@import"_delivery-2.scss";
+		//</заберу сам>----------------------------------------------/
+
+		//<новой почтой>---------------------------------------------/
+		@import"_delivery-3.scss";
+		//</новой почтой>--------------------------------------------/
+		//<доставка в больницу>--------------------------------------/
+		@import"_delivery-4.scss";
+		//</доставка в больницу>-------------------------------------/
+	//</КЛАССЫ ВИДА ДОСТАВКИ>===========================================//
+
+
+	//<КЛАССЫ ВИДА ДОСТАВКИ>===========================================================================================//
+
+//</ОБЩИЕ КЛАССЫ>=============================================================================================================//=//
+
+//<MEDIA>===============
+@import "../../scss_pages/_media__ftr.hdr.scss";
+@import "_checkout_media.scss";
+//</MEDIA>===============

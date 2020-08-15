@@ -1,0 +1,122 @@
+//доставка по адресу----------------------
+.delivery-kind-1 {
+	display: none;
+	//display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__form-1 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		:nth-child(2),
+		:last-child {
+			width: 170px;
+		}
+		:last-child {
+			margin-right: 0;
+		}
+	}
+	// .delivery-kind-1__1-input
+	&__1-input {
+		margin-right: 10px;
+	}
+	&__subtitle-1 {
+		margin-bottom: 32px;
+	}
+	&__delivery-type {
+		width: 450px;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	// .delivery-kind-1__type
+	&__type {
+		width: 50%;
+		cursor: pointer;
+	}
+	&__subtitle-2 {
+		margin-bottom: 22px;
+	}
+	&__form-2 {
+		min-width: 270px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 80px;
+	}	
+	&__2-input {
+		margin-bottom: 20px;
+	}
+	&__textarea {
+		height: 160px;
+		border-radius: 15px; 
+		padding-top: 12px;
+	}
+}
+///доставка по адресу----------------------
+
+//<MEDIA delivery-1>=========================================================
+@media (min-width: 1919.98px) {//------------------------------------------------------1919.98
+	.delivery-kind-1 {
+		&__delivery-type {
+			margin-bottom: 40px;
+		}
+		&__subtitle-2 {
+			margin-bottom: 32px;
+		}
+		&__form-2 {
+			margin-bottom: 95px;
+		}
+		&__2-input {
+			margin-bottom: 15px;
+		}
+	}
+}   
+@media (max-width: 1251.98px) {//------------------------------------------------------1251.98
+}
+@media (max-width: 1023.98px) {//------------------------------------------------------1023.98
+}  
+@media (max-width: 990.98px) {//------------------------------------------------------990.98
+   .delivery-kind-1 {
+      &__form-1 {
+         flex-wrap: wrap;
+         max-width: 450px;
+	   	:nth-child(2),
+	   	:last-child {
+	   		width: 48%;
+	   	}
+	   }
+      &__1-input {
+			width: 100%;
+         margin-right: 0;
+         margin-left: 4%;
+         &:nth-child(2) {
+            margin-left: 0%;
+         }
+         &:first-child {
+            margin-left: 0%;
+            margin-bottom: 15px;
+         }
+      }
+	} 
+}
+@media (max-width: 767.98px) {//------------------------------------------------------767.98
+}
+@media (max-width: 639.98px) {
+   .delivery-kind-1 {
+      &__form-1 {
+         max-width: 270px;
+         margin-bottom: 50px;
+      }
+      &__avalible-time--active {
+         display: flex;
+         flex-direction: column;
+   		margin-bottom: 86px;
+      }
+      &__textarea {
+         width: 100%;
+      }
+   }
+}
+@media (max-width: 419.98px) {//------------------------------------------------------419.98
+}
+//<MEDIA delivery-1>==============================================
