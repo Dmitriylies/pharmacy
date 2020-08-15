@@ -1,0 +1,175 @@
+	//<ШРИФТ>-----
+	$Avenir :'Avenir Next Cyr';
+	$Gilroy : 'Gilroy';
+//</ШРИФТ>-----
+	//<ЦВЕТ>-------
+	$ocean: #2196F3;
+	//</ЦВЕТ>------
+
+//====================================================================================================
+
+.header {
+	font-family: $Avenir;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	position: relative;
+	// .header__inner
+	&__inner {
+		margin: 40px 0px 80px 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .header__head
+	&__head {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 55px;
+	}
+	&__head-wrap {
+		display: flex;
+	}
+	// .header__logo
+	&__logo {
+		display: flex;
+		width: 100px;
+		height: 45px;
+		margin-right: 108px;
+		
+		img {
+			width: 100%;
+			object-fit: contain;
+			border-radius: 23px;
+		}
+	}
+	&__logo-link{
+		&:focus {
+			img {
+				transition: 0.2s;
+				box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);	
+			}
+		}
+	}
+	// .header__form
+   &__form {
+      display: flex;
+      box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 100px;
+      border: 1px solid $ocean;
+      background-color: #fff;
+      position: relative;
+      margin: 0 ;
+      width: 483px;
+		height: 46px;
+      &::before {
+         content: url(../../img/general/_icons/icon__loupe-s.svg);
+         position: absolute; 
+         z-index: 5;
+			top: 12px;
+			left: 19px;
+      }
+   }
+   // .header__form-input
+   &__form-input {
+      display: flex;
+      align-items: center;
+      border-radius: 100px 10px 0px 100px;
+      position: relative;
+      font-family: $Avenir;	
+      width: 100%;		
+      font-size: 18px;
+      line-height: 22px;
+		padding-left:57px;
+		
+      &::placeholder {
+         font-family: $Avenir;
+         color: #595959;
+         opacity: 0.5;
+         font-size: 18px;
+         line-height: 22px;
+      }
+   }
+   // .header__form-button
+   &__form-button {
+      background: #2196F3;
+      font-family: $Avenir;
+      font-weight: 600;
+      color: #FFFFFF;
+      border-radius: 200px 100px 100px 0px;
+      min-width: 140px;
+      font-size: 18px;
+		line-height: 22px;
+		&:focus {
+			transition: 0.2s;
+			background: #1869ac;
+		}
+   }
+	// .header__phone
+	&__phone {
+		min-width: 135px;
+		font-size: 14px;
+		line-height: 17px;
+		color: #2196F3;
+		position: relative;
+		margin-left: 50px;
+		&:focus{
+			transition: 0.2s;
+			color: #1869ac;
+		}
+		&::before {
+			content: url(../../img/general/_icons/icon__phone.svg);
+			position: absolute;
+			top: 3px;
+			left: -20px;
+		
+		}
+	}
+	// .header__bascet
+	&__bascet-wrap {
+		display: flex;
+		align-items: flex-end;
+		min-width: 150px;
+	}
+	// .header__bascet
+	&__bascet {
+		padding: 12px 53px 12px 34px;
+		background: #FFFFFF;
+		box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 100px 100px 100px 0px;
+		color: $ocean;
+		position: relative;
+		&:focus{
+			transition: 0.2s;
+			box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+		}
+		&::after {
+			content: url(../../img/general/_icons/icon__basket.svg);
+			position: absolute;
+			right: 25px;
+			top: 9px;
+		}
+		span {
+			position: absolute;
+			min-width: 12px;
+			height: 12px;
+			padding: 8px 5px;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 11px;
+			line-height: 13px;
+			top:0;
+			right: 0;
+			background-color: $ocean;
+			color: #fff;
+		}
+	}
+	&__btn-back {
+      display: none;
+   }
+}
+

@@ -1,0 +1,81 @@
+$Avenir :'Avenir Next Cyr';
+//====================================================================================================
+.footer {
+   background: #F5F5F5;
+   // .footer__inner
+   &__inner {
+   }
+   // .footer__main
+   &__main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+   }
+   // .footer__logo
+   &__logo {
+
+      img{
+         width: 100%;   
+         object-fit: cover;
+      }
+   }
+   // .footer__logo-link
+   &__logo-link {
+   }
+   // .footer__info
+   &__info {
+      width: 450px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    
+   }
+   // .footer__text
+   &__text {
+      width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     font-family: $Avenir;
+     font-size: 14px;
+     line-height: 17px;
+     color: #4F4F4F;
+      &:first-child{
+         padding-bottom: 22px;
+         border-bottom: 0.5px solid #2196F3;
+         margin-bottom: 17px;
+      }
+   }
+   // .footer__img
+   &__img {
+      width: 95px;
+      height: 125px;
+      object-fit: cover;
+   }
+   &__phone {
+      font-family: $Avenir;
+	   font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #2196F3;
+		position: relative;
+		&::before {
+			content: url(../../img/general/_icons/icon__phone.svg);
+			position: absolute;
+			top: 3px;
+			left: -20px;
+		}
+	}
+   // .footer__remark
+   &__remark {
+      display: block;
+      background: #E5E5E5;
+   }
+   &__remark-img {
+      width: 100%;
+      padding: 43px 0 33px;
+      object-fit: cover;
+   }
+}
+//====================================================================================================
+

@@ -1,0 +1,360 @@
+@media (min-width: 1919.98px) {
+   //?--------------header--------------
+   .header{
+      &__inner {
+         margin-bottom: 95px;
+      }
+      &__logo {
+         width: 133px;
+         height: 60px;
+      }
+      &__form {
+         width: 825px;
+         height: 60px;
+         &::before {
+            top: 20px;
+            left: 30px;        
+         }
+      }
+      &__form-input {
+         padding-left: 75px;
+      }
+      &__form-button {
+         min-width: 218px;
+         font-size: 24px;
+         line-height: 29px;
+      }
+      &__phone {
+         font-size: 18px;
+         line-height: 22px;
+         &::before {
+         transform: scale(1.4);
+         top: 5px;
+         left: -39px;
+         }
+      }
+      &__bascet {
+         min-width: 185px;
+         height: 52px;
+         font-size: 18px;
+         line-height: 22px;
+         &::after {
+            right: 36px;
+            top: 16px;
+         }
+         span {
+			   width: 23px;
+            height: 23px;
+            font-size: 14px;
+            line-height: 17px;
+         }
+      }
+    }
+   //?--------------header--------------
+   .footer {
+      &__logo {
+         width: 133px;
+         height: 60px;
+      }
+      &__info {
+         width: 595px;
+      }
+      &__text {
+         font-size: 18px;
+         line-height: 22px;
+      }
+      &__phone {
+         font-size: 24px;
+         line-height: 29px;
+         &::before {
+            top: 1px;
+            left: -40px;
+            transform: scale(1.4);
+         }
+      }
+   }
+}   
+@media (max-width: 1251.98px) {
+   .header{ 
+      &__phone {
+      display: none;
+      }
+   }
+}
+
+@media (max-width: 1023.98px) {
+
+}   
+@media (max-width: 990.98px) {
+//?--------------header--------------
+  
+   .header{ 
+    
+      &__head {
+         margin-right: 45px;
+      }
+      &__logo {
+         margin-right: 45px;
+      }
+      &__form {
+         width: 350px;
+         height: 44px;
+         &::before {
+            content: '';
+         }
+      }
+      &__form-input {
+         padding: 15px 0px 15px 25px;
+      }
+		&__form-button {
+			min-width: 49px;
+			border-radius: 0px 100px 100px 0px;
+         font-size: 0px;
+         position: relative;
+         &::before {
+				content: url(../../img/3__loupe-fff.svg);
+				position: absolute; 
+				top: 11px;
+				right: 12px;
+				z-index: 5;
+			}
+      }
+   }
+//?--------------/header-------------
+
+//?-------footer----------------------
+   .footer {
+      // .footer__info
+      &__info {
+         max-width: 250px ;
+         justify-content: flex-start;
+      }
+      // .footer__text
+      &__text {
+         &:first-child,
+         &:nth-child(2),
+         &:nth-child(3){
+            border-bottom: none;
+            padding: 0;
+            margin-bottom: 30px;
+         }
+      }
+      // .footer__img
+      &__img {
+         display: none;
+      }
+      
+   }
+//?---------/footer------------------
+}   
+@media (max-width: 767.98px) {
+   body {
+      background: none;
+   }
+//?--------------header--------------
+.header{ 
+   &__inner {
+      margin: 40px 0px 20px 0px;
+   }
+   &__form {
+      display: none;
+   }
+   &__btn-back {
+      display: block;
+      margin-bottom: 27px;
+      padding: 12px 20px 12px 33px;
+      position: relative;
+      font-size: 12px;
+      line-height: 15px;
+      color:$ocean;
+      background-color: transparent;
+      box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+      &::before{
+         content: url(../../img/general/_icons/icon__arrow-left.svg);
+			position: absolute;
+			left: 14px;
+			top: 12px;
+      }
+   }
+}
+//?--------------/header-------------
+
+//?---------footer-------------------
+//?---------/footer------------------
+}   
+@media (max-width: 639.98px) {
+ //?--------------header-------------
+   .header{ 
+      
+      &__logo {
+         margin-right: 0px;
+         img {
+            width: 100%;
+            
+            object-fit: contain;
+         }
+      }
+      &__form {
+         display: none;
+		}
+      
+      &__form-input {
+			width: 100%;
+			border-radius: 100px 10px 0px 100px;		
+			font-size: 14px;
+         line-height: 17px;
+			padding: 0px 0px 0px 20px;
+			&::placeholder {
+				font-size: 14px;
+            line-height: 17px;
+			}
+		}
+		&__form-button {
+			width: 49px;
+			border-radius: 0px 100px 100px 0px;
+         font-size: 0px;
+         position: relative;
+         &::before {
+				content: url(../../img/3__loupe-fff.svg);
+				position: absolute; 
+				top: 11px;
+				right: 12px;
+				z-index: 5;
+			}
+      }
+      &__btn-back {
+         margin-bottom: 27px;
+      }
+}
+//?--------------/header-------------
+//?---------footer------------------
+   .footer {
+      overflow: hidden;
+      background: #F5F5F5;
+      &__inner {
+      }
+      &__main {
+         background: url(../../img/mobile-bg__plant.svg) right 10px no-repeat;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 30px 0;
+      }
+      &__logo {
+         display: none;
+      }
+      &__logo-link {
+      }
+      &__info {
+         justify-content: flex-start;
+         padding-bottom: 37px;
+         margin-bottom: 30px;
+         position: relative;
+         
+         &::before{
+            content: '';
+            position: absolute;
+            width: 650px;
+            height: 1px;
+            background-color: #535461;
+            opacity: 0.5;
+            bottom: 0;
+            left: calc(50% - 325px);
+}
+
+      }
+      &__text {
+         &:first-child,
+         &:nth-child(2)
+         &:nth-child(3)
+         {
+            padding-bottom: 0px;
+            border-bottom: none;
+            margin-bottom: 30px;
+         }
+      }
+      // .footer__remark
+      &__remark {
+        display: none;
+      }
+   }
+//?---------/footer------------------
+}   
+@media (max-width: 419.98px) {
+   //?--------------header-------------
+   .header{ 
+      font-size: 10px;
+         line-height: 12px; 
+      &__logo {
+         width: 64px;
+         height: 28.8px;
+         margin-right: 0px;
+         img {
+            width: 100%;
+            
+            object-fit: contain;
+         }
+      }
+      &__form {
+         display: none;
+		}
+      
+      &__form-input {
+			width: 100%;
+			border-radius: 100px 10px 0px 100px;		
+			font-size: 14px;
+         line-height: 17px;
+			padding: 0px 0px 0px 20px;
+			&::placeholder {
+				font-size: 14px;
+            line-height: 17px;
+			}
+		}
+		&__form-button {
+			width: 49px;
+			border-radius: 0px 100px 100px 0px;
+         font-size: 0px;
+         position: relative;
+         &::before {
+				content: url(../../img/3__loupe-fff.svg);
+				position: absolute; 
+				top: 11px;
+				right: 12px;
+				z-index: 5;
+			}
+      }
+      &__logo {
+         width: 64px;
+         height: 29px;
+         margin-right: 0px;
+      }
+      &__bascet-wrap {
+         min-width: 110px;
+         height: 29px;
+      }
+      &__bascet {
+         padding: 8px 42px 8px 23px;
+         background: #FFFFFF;
+         box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+         border-radius: 100px 100px 100px 0px;
+         color: $ocean;
+         position: relative;
+         &::after {
+            content: url(../../img/general/_icons/bascet_mobile.svg);
+            position: absolute;
+            right: 25px;
+            top: 9px;
+         }
+      }
+      &__head {
+         margin-right: 25px;
+      }
+   }
+   .footer {
+      &__main {
+         padding-top: 48px;
+      }
+   }
+//?--------------/header-------------
+}
