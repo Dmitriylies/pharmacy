@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Semibold.woff") format("woff"), url("../../fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../../fonts/AvenirNextCyr-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../../fonts/avenirnextcyr-demi.woff2") format("woff2");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-go-bascet {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  padding: 65px 60px 65px 60px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-go-bascet__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-go-bascet__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+.modal-go-bascet__text {
+  width: 371px;
+  max-width: 100%;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+
+.modal-go-bascet__btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal-go-bascet__btn-wrap::after {
+  content: '';
+  position: absolute;
+  width: 136px;
+  max-width: 100%;
+  height: 1px;
+  background-color: #2196F3;
+  top: -30px;
+  left: calc(50% - 68px);
+}
+
+.modal-go-bascet__btn-1 {
+  width: 230px;
+  max-width: 100%;
+  height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  margin: 0 auto;
+  background: linear-gradient(152.39deg, #2196F3 26.24%, #5C76FF 102.67%);
+  box-shadow: 4px 4px 20px rgba(33, 150, 243, 0.15);
+  font-family: "Avenir Next Cyr";
+  font-weight: 750;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.modal-go-bascet__btn-2 {
+  width: 230px;
+  max-width: 100%;
+  height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid #2196F3;
+  font-family: "Avenir Next Cyr";
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2196F3;
+}
+
+@media (max-width: 639.98px) {
+  .modal-go-bascet {
+    width: 282px;
+    padding: 32px 21px 32px 21px;
+  }
+  .modal-go-bascet__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .modal-go-bascet__btn-wrap {
+    flex-wrap: wrap;
+  }
+  .modal-go-bascet__btn-1 {
+    margin-bottom: 20px;
+  }
+}

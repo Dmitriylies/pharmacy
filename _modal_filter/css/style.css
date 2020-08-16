@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Semibold.woff") format("woff"), url("../../fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../../fonts/AvenirNextCyr-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../../fonts/avenirnextcyr-demi.woff2") format("woff2");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 170, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.catalog__button-filter-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog__menu {
+  display: block;
+  width: 278px;
+  position: absolute;
+  background-color: #fff;
+  margin: 0;
+  top: 0px;
+  z-index: 100;
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 21px 0px 0px;
+  box-sizing: border-box;
+}
+
+.catalog__menu-wrap {
+  width: 278px;
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__menu-title {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2196F3;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 16px 0px;
+  background-color: rgba(240, 215, 215, 0.123);
+}
+
+.catalog__menu-list {
+  width: 189px;
+  text-align: center;
+}
+
+.catalog__menu-item {
+  margin-bottom: 25px;
+}
+
+.catalog:last-child {
+  margin-bottom: 0px;
+}
+
+.catalog__menu-link {
+  font-family: "Avenir Next Cyr";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.85);
+}

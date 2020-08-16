@@ -1,0 +1,114 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+	$fontfamily : 'Avenir Next Cyr';
+//</ШРИФТЫ>===============================================================
+//<ПЕРЕМЕННЫЕ>=========================
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================
+//<ОСНОВНОЙ БЛОК>==============================================================
+body {
+	background-color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+//.modal-go-bascet__wrap{
+//}
+.modal-go-bascet {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	max-width: 100%;
+	padding: 65px 60px 65px 60px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+	position: relative;
+	// .modal-go-bascet__wrap
+	&__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	// .modal-go-bascet__info
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 53px ;
+	}
+	// .modal-go-bascet__text
+	&__text {
+		width: 371px;
+		max-width: 100%;
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		color: #444444;
+	}
+	&__btn-wrap {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 136px;
+			max-width: 100%;
+			height: 1px;
+			background-color: $ocean;
+			top: -30px;
+			left: calc(50% - 68px);
+		}
+	}
+	// .modal-go-bascet__btn-1
+	&__btn-1 {
+		width: 230px;
+		max-width: 100%;
+		height: 40px;
+		text-align: center;
+		border-radius: 100px;
+		margin: 0 auto;
+		background: linear-gradient(152.39deg, #2196F3 26.24%, #5C76FF 102.67%);
+		box-shadow: 4px 4px 20px rgba(33, 150, 243, 0.15);
+		font-family: $Avenir;
+		font-weight: 750;
+		font-size: 14px;
+		line-height: 17px;
+		color: #FFFFFF;
+	
+	
+	}
+	// .modal-go-bascet__btn-2
+	&__btn-2 {
+		width: 230px;
+		max-width: 100%;
+		height: 40px;
+		text-align: center;
+		border-radius: 100px;
+		margin: 0 auto;
+		background: transparent;
+		border: 1px solid $ocean;
+		font-family: $Avenir;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 17px;
+		color: $ocean;
+	}
+}
+//</ОСНОВНОЙ БЛОК>=============================================================
+@import "_mod_go-bascet_media.scss";

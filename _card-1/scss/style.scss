@@ -1,0 +1,180 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+	$fontfamily : 'Avenir Next Cyr';
+//</ШРИФТЫ>===============================================================
+
+
+//<ПЕРЕМЕННЫЕ>=========================
+
+	//<РАЗРЕШЕНИЕ>-----
+		$minwidth: 320px;
+		$mm: 1920;
+		$mw: 1240;
+		$md1: $mw + 12;
+		$md2: 990.98;
+		$md3: 767.98;
+		$md4: 479.98;
+	//</РАЗРЕШЕНИЕ>-----
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+	body {
+		color: #000;
+		font-size: 14px;
+	}
+//<ОСНОВНОЙ БЛОК>==============================================================
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 277px;
+	background-color: #ffffff;
+   border-radius: 20px ;
+	box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.08);
+	margin: 0px 15px 30px 15px;
+	
+	// .item__pic
+	&__pic {
+		position: relative;
+		width: 277px;
+		height: 186px;
+		border-radius: 20px ;
+		margin-bottom: 22px;
+	}
+	&__pic-link {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	// .item__img
+	&__img-mobile,
+	&__img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 20px 20px 0 0;
+	}
+	&__img-mobile {
+		display: none;
+   }
+	// .item__info
+	&__info {
+		width: 100%;
+		padding: 0px 23px 0px 24px;
+	}
+	// .item__title
+	&__title {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		color: $ocean;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	// .item__list
+	&__list {
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 15px;
+		padding: 14px 15px 10px 11px;	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-family: $Avenir;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 20px;
+	}
+	// .item__point
+	&__point {
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;           
+		padding-left: 12px;
+		color: $ocean;
+		position: relative;
+		font-size: 12px;
+		line-height: 15px;
+		margin-bottom: 19px;
+		&::before {
+			content: '';
+			position: absolute;
+			left:1px;
+			top:6px;
+			height:4px;
+			width: 4px;
+			vertical-align: middle;
+			border-radius:50%;
+			background-color:$ocean;
+			margin-right:5px;
+		}
+	}
+	// .item__name
+	&__name {
+		max-width: 130px ;
+		margin-right: 20px;
+		color: #444444;
+		font-weight: normal;
+
+	}
+	// .item__desc
+	&__desc {
+		max-width: 80px;
+		text-align: right;
+		font-weight: bold;
+	}
+	// .item__price
+	&__price {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	// .item__price-new
+	&__price-new {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		color: #444444;
+		margin-right: 17px;
+	}
+	// .item__price-old
+	&__price-old {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		color: $ocean;
+		text-decoration: line-through;
+	}
+	// .item__btn
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 40px;
+		margin-left:0 auto 20px;
+		font-family: $Avenir;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #ffffff;
+		background-color: $ocean;
+		border-radius: 100px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+}
+//</ОСНОВНОЙ БЛОК>=============================================================
+//<MEDIA>================
+@import "../../scss_pages/_card-1_media.scss";
+//</MEDIA>===============

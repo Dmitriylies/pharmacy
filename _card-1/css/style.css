@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../fonts/Gilroy-Semibold.woff") format("woff"), url("../../fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../../fonts/AvenirNextCyr-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../../fonts/avenirnextcyr-demi.woff2") format("woff2");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 277px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.08);
+  margin: 0px 15px 30px 15px;
+}
+
+.item__pic {
+  position: relative;
+  width: 277px;
+  height: 186px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+
+.item__pic-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.item__img-mobile, .item__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.item__img-mobile {
+  display: none;
+}
+
+.item__info {
+  width: 100%;
+  padding: 0px 23px 0px 24px;
+}
+
+.item__title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2196F3;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.item__list {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 14px 15px 10px 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Avenir Next Cyr";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.item__point {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  color: #2196F3;
+  position: relative;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 19px;
+}
+
+.item__point::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 6px;
+  height: 4px;
+  width: 4px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #2196F3;
+  margin-right: 5px;
+}
+
+.item__name {
+  max-width: 130px;
+  margin-right: 20px;
+  color: #444444;
+  font-weight: normal;
+}
+
+.item__desc {
+  max-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.item__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item__price-new {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #444444;
+  margin-right: 17px;
+}
+
+.item__price-old {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2196F3;
+  text-decoration: line-through;
+}
+
+.item__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  margin-left: 0 auto 20px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #2196F3;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1919.98px) {
+  .item {
+    width: 397px;
+  }
+  .item__pic {
+    width: 397px;
+    height: 266px;
+  }
+  .item__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .item__list {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .item__price-new {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .item__price-old {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .item__btn {
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(152.21deg, #2196F3 26.24%, #5C76FF 102.67%);
+  }
+}
+
+@media (max-width: 990.98px) {
+  .item {
+    width: 143px;
+    margin: 0px 10px 20px 10px;
+  }
+  .item__pic {
+    margin-top: 14px;
+    width: 108px;
+    height: 108px;
+    border-radius: 0px;
+    margin-bottom: 1px;
+  }
+  .item__img {
+    display: none;
+  }
+  .item__img-mobile {
+    display: block;
+  }
+  .item__info {
+    padding: 0px 18px 0 17px;
+  }
+  .item__title {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+  .item__list {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 2px;
+  }
+  .item__point {
+    display: none;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .item__point:first-child {
+    display: flex;
+  }
+  .item__name {
+    margin-right: 0px;
+  }
+  .item__desc {
+    text-align: center;
+  }
+  .item__price {
+    justify-content: flex-start;
+    margin-bottom: 6px;
+  }
+  .item__price-new {
+    font-size: 14px;
+    line-height: 30px;
+    color: #2196F3;
+  }
+  .item__price-old {
+    display: none;
+  }
+  .item__btn {
+    width: 108px;
+    height: 40px;
+    font-size: 0;
+    line-height: 0;
+    background-color: #fff;
+    border: 1px solid #2196F3;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  .item__btn::before {
+    content: url(../../img/general/_icons/icon_plus.svg);
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    color: #2196F3;
+    z-index: 10;
+  }
+  .item__btn::after {
+    content: url(../../img/general/_icons/icon__basket.svg);
+    position: absolute;
+    top: 11px;
+    right: 32px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 639.98px) {
+  .item {
+    margin: 0px 5px 20px 5px;
+  }
+}

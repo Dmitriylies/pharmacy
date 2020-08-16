@@ -1,0 +1,365 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+	$fontfamily : 'Avenir Next Cyr';
+//</ШРИФТЫ>===============================================================
+
+
+//<ПЕРЕМЕННЫЕ>=========================
+
+	//<РАЗРЕШЕНИЕ>-----
+		$minwidth: 320px;
+		$mm: 1920;
+		$mw: 1240;
+		$md1: $mw + 12;
+		$md2: 990.98;
+		$md3: 767.98;
+		$md4: 479.98;
+	//</РАЗРЕШЕНИЕ>-----
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+	body {
+		color: #000;
+		font-size: 14px;
+		font-family: $Avenir;
+	}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================
+
+
+//<ОСНОВНАЯ СЕТКА>=============================================================
+.container {
+	max-width:  $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px 20px;
+	@media (min-width: $mm+px) {
+		max-width: 1780px;
+		padding: 0 20px;
+	}
+	 @media (max-width: $md1+px) {
+	 	max-width: 1070px;
+	 }
+	 @media (max-width: $md2+px) {
+	 	max-width: 750px;
+	 }
+	 @media (max-width: $md3+px) {
+	 	max-width: none;
+	 	padding: 0 20px;
+	 }
+}
+//</ОСНОВНАЯ СЕТКА>==================================================================
+
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+	@import "../../scss_pages/_header.scss";
+	@import "../../scss_pages/_footer.scss";
+
+	
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+
+
+//<ОБЩИЕ КЛАССЫ>===============================================================
+//</ОБЩИЕ КЛАССЫ>==============================================================
+
+
+//=============================================================================
+
+
+//<ОСНОВНОЙ БЛОК>==============================================================
+.item-page {
+	// .item-page__inner
+	&__inner {
+	}
+	// .item-page__nav
+	&__nav {
+		margin-bottom: 47px;
+	}
+	// .item-page__list
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	// .item-page__item
+	&__item {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	// .item-page__item-link
+	&__item-link {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	// .item-page__product
+	&__product {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;	
+		margin-bottom: 107px;
+	}
+	// .item-page__img
+	&__img {
+		width: 485px;
+		max-width: 100%;
+		max-height: 352px ;
+		margin-right: 32px;
+		padding: 9px 0 1px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	// .item-page__desc-main
+	&__desc-main {
+		max-width: 100%;
+	}
+	// .item-page__title-wrap
+	&__title-wrap {
+		max-width: 620px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	// .item-page__title
+	&__title {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		color: $ocean;
+		margin-bottom: 22px;
+	}
+	// .item-page__info-wrap
+	&__info-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 350px ;
+		max-width: 100%;
+	}
+	// .item-page__subtitle
+	&__subtitle {
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	color: #828282;
+	margin-bottom: 20px;
+	}
+	// .item-page__title-btn
+	&__title-btn {
+		width: 140px;
+		height: 40px;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: $ocean;
+		background-color: transparent;
+		border: 1px solid $ocean;
+		border-radius: 100px;
+		box-shadow: 4px 4px 20px rgba(33, 150, 243, 0.25);
+		margin-bottom: 20px;
+	}
+	// .item-page__desc
+	&__desc {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		width: 584px;
+		max-width: 100%;
+		max-height: 285px;
+		background: #FFFFFF;
+		box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.07);
+		border-radius: 25px;
+		padding: 29px 25px 30px 24px;
+		overflow: auto;
+	}
+	// .item-page__desc-item
+	&__desc-item {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 0px 0px 22px;
+		margin-bottom: 21px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: 4px;
+			top: 15px;
+			height: 7px;
+			width: 7px;
+			vertical-align: middle;
+			border-radius:50%;
+			background-color:$ocean;
+			margin-right:5px;
+		}
+	}
+	// .item-page__desc-name
+	&__desc-name {
+		font-weight: 450;
+		font-size: 18px;
+		line-height: 40px;
+	}
+	// .item-page__desc-info
+	&__desc-info {
+		max-width: 200px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 18px;
+		color: $ocean;
+	}
+	// .item-page__price
+	&__price {
+		width: 585px;
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	// .item-page__cost
+	&__cost {
+		width: 200px;
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	// .item-page__cost-now
+	&__cost-new {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		color: #444444;
+	}
+	// .item-page__cost-old
+	&__cost-old {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		color: $ocean;
+		text-decoration: line-through;
+	}
+	// .item-page__btn-wrap
+	&__btn-wrap {
+		width: 344px;
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__btn {
+		width: 162px;
+		max-width: 100%;
+		height: 40px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		border-radius: 100px;
+		margin-bottom: 20px;
+	}
+	// .item-page__btn-1
+	&__btn-1 {
+		color: #ffffff;
+		background: linear-gradient(143.3deg, #2196F3 26.24%, #5C76FF 102.67%);
+		box-shadow: 4px 4px 20px rgba(33, 150, 243, 0.15);
+		
+	}
+	// .item-page__btn-2
+	&__btn-2 {
+		background-color: #fff;
+		color: $ocean;
+		border: 1px solid $ocean;
+	}
+	// .item-page__accordion
+	&__accordion {
+		margin-bottom: 90px;
+	}
+	// .item-page__item-title
+	&__item-title {
+		font-family: $Gilroy;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		padding: 29px 0px 22px 162px;
+		margin-bottom: 30px;
+		box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.07);
+		border-radius: 15px;
+		color: $ocean;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: url(../../img/accordion_arrow-up.svg);
+			position: absolute;
+			top: 30px;
+			left: 103px;
+		}
+	}
+	// .item-page__item-desc-wrap
+	&__item-desc-wrap {
+	display: none;
+		
+	}
+	.active {
+		display: block;
+		&::before {
+			transition:all .15s;
+			transform: rotateX(180deg);
+		}
+	}
+	// .item-page__item-desc
+	&__item-desc {
+		padding: 0px 0px 0px 102px;
+
+	}
+	// .item-page__item-sutitle
+	&__item-sutitle {
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 40px;
+	}
+	// .item-page__item-text
+	&__item-text {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 40px;
+	}
+}
+.container {
+}
+.info {
+	// .info__inner
+	&__inner {
+	}
+}
+
+//</ОСНОВНОЙ БЛОК>=============================================================
+//<MEDIA>===============
+@import "../../scss_pages/_media__ftr.hdr.scss";
+@import "_item-page_media.scss";
+
+//</MEDIA>===============
+

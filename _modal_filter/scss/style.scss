@@ -1,0 +1,92 @@
+//<ШРИФТЫ>================================================================
+	@import "../../scss_pages/_fonts.scss";
+	$fontfamily : 'Avenir Next Cyr';
+//</ШРИФТЫ>===============================================================
+//<ПЕРЕМЕННЫЕ>=========================
+	//<ШРИФТ>-----
+		$Avenir :'Avenir Next Cyr';
+		$Gilroy : 'Gilroy';
+	//</ШРИФТ>-----
+	//<ЦВЕТ>-------
+		$ocean: #2196F3;
+	//</ЦВЕТ>------
+//</ПЕРЕМЕННЫЕ>=========================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================
+	@import "../../scss_pages/_null.scss";
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================
+//<ОСНОВНОЙ БЛОК>==============================================================
+.modal {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 170, 255, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 1s
+ }
+.catalog {
+	&__button-filter-wrap {
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__menu {
+		display: block;
+		width: 278px;
+		position: absolute;
+		background-color: #fff;
+		margin: 0;
+		top: 0px;
+		z-index: 100;
+		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.08);
+		border-radius: 15px;
+		padding: 21px 0px 0px;
+		box-sizing: border-box;
+	}
+	&__menu-wrap {
+		width: 278px;
+		padding: 0;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .catalog__menu-title
+	&__menu-title {
+		font-family: $Gilroy;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: $ocean;
+		text-align: center;
+		margin-bottom: 30px;
+		padding: 16px 0px;
+		background-color: rgba(240, 215, 215, 0.123)
+	}
+	&__menu-list {
+		width: 189px;
+		text-align: center;
+	}
+	// .catalog__menu-item
+	&__menu-item {
+		margin-bottom: 25px;
+	}
+		&:last-child {
+			margin-bottom: 0px; 
+		}
+			// .catalog__menu-link
+	&__menu-link {
+		font-family: $Avenir;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(0, 0, 0, 0.85);
+	}
+	
+
+}
+//</ОСНОВНОЙ БЛОК>=============================================================
+@import "_mod_filter_media.scss";
